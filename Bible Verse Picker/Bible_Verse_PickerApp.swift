@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct Bible_Verse_PickerApp: App {
+    @State var connectedVerseContent = ""
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BibleVersePicker(connectedVerseContent: $connectedVerseContent)
         }
     }
 }
